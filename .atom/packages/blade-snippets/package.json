@@ -1,0 +1,38 @@
+{
+  "name": "blade-snippets",
+  "main": "./lib/blade-snippets",
+  "version": "0.1.0",
+  "description": "Laravel 5 blade snippets! useful snippets for the blade templating engine.",
+  "activationCommands": {
+    "atom-workspace": "blade-snippets:toggle"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slayerfat/atom-blade-snippets"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "dependencies": {},
+  "readme": "# Blade templating snippets\n\nLaravel 5 blade snippets! useful snippets for the blade templating engine.\n\nConverted from [blade-snippets for sublime](https://github.com/dev4dev/blade-snippets)\nusing the [sublime to atom](https://github.com/james2doyle/sublime-to-atom-snippets) script.\n\n##Avalable snippets\n\n| Shortcut  | Result |\n|-----------|--------|\n| ext\t\t| @extends('`name`') |\n| lay\t\t| @layout('`name`')  |\n| sec\t\t| @section('`name`') <br /> **{{-- expr --\\}\\}** <br /> @endsection    |\n| secy\t\t| @section('`name`') <br /> **{{-- expr --\\}\\}** <br /> @yield_section |\n| yl\t\t| @yield('`section`', '`default`') |\n| lsec\t\t| @section('`name`') <br /> **{{-- expr --\\}\\}** <br /> @show |\n| par\t\t| @parent\t|\n| !!\t\t| {!! $`var` !!}\t|\n| inc\t\t| @include('`view.name`', `['some' => 'data']`)  |\n| if\t\t| @if (`condition`) <br /> **{{-- expr --\\}\\}** <br /> @endif   |\n| ife\t\t| @if (`condition`) <br /> **{{-- expr --\\}\\}** <br /> @else <br /> **{{-- expr --\\}\\}** <br /> @endif  |\n| foreach\t| @foreach(`$array` as `$element`) <br /> **{{-- expr --\\}\\}** <br /> @endforeach  |\n| fore\t\t| @forelse (`$array` as `$element`) <br /> **{{-- expr --\\}\\}** <br /> @endforelse  |\n| for\t\t| @for (`$i` = `0`; `$i` `<` `…`; `$i++`) <br /> **{{-- expr --\\}\\}** <br /> @endfor  |\n| each\t\t| @each ('`item.view`', $`items`, '`item`', '`empty.view`')\n| trans\t\t| {!! trans('`language.line`') !!}\t|\n| route\t\t| {!! route('`name`') !!}\t|\n| asset\t\t| {!! asset('`path`') !!}\t|\n| action\t| {!! link_to_action('`Controller@method`') !!}\t|\n| while\t\t| @while (`condition`) <br /> **{{-- expr --\\}\\}** <br /> @endwhile  |\n| unless\t| @unless (`condition`) <br /> **{{-- expr --\\}\\}** <br /> @endunless  |\n| choice\t| @choice('`language.line`', $`number`)  |\n| comment\t| {{-- `comment` --}}\t|\n| lang\t\t| @lang('`language.line`', `['variable => 'replacement']`)  |\n\n\n##Disclaimer\n\nFeel free to contribute!\n\nAs of today, i am a complete noob at making atom packages, if there is any error,\nsuggestion, improvement, etc, to point or make, feel free to do so.\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/slayerfat/atom-blade-snippets/issues"
+  },
+  "homepage": "https://github.com/slayerfat/atom-blade-snippets",
+  "_id": "blade-snippets@0.1.0",
+  "_shasum": "ce44c0f1817b5113b6b19703be33af40c9d15a55",
+  "_resolved": "file:../d-115625-65345-y3xmq2/package.tgz",
+  "_from": "../d-115625-65345-y3xmq2/package.tgz",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}
